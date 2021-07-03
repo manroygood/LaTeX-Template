@@ -1,0 +1,39 @@
+% Packages I always call
+
+% BiBTeX helper package that sorts citations and compresses consecutive numbered citations
+\usepackage[numbers,sort&compress]{natbib}  
+
+% Package to allow for the inclusion of graphics files
+\usepackage{graphicx}
+
+% The breqn package allows \left and \right delimiters to match across line breaks. 
+% It requires the flexisym package
+\usepackage{flexisym}	 
+\usepackage{breqn}       
+
+% Several important packages for math and physics typesetting
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}   % Some improvements to AMS-LaTeX
+\usepackage{physics}
+
+%%% Fix some problems due to TeX being a super-old program
+
+% The inputenc package allows you for the direct input of diacritic characters
+\usepackage[utf8]{inputenc} 
+
+% These 2 lines automatically replace ordinary quotation marks
+% with asymmetric opening and closing quotation marks
+\usepackage{csquotes}     
+\MakeOuterQuote{"}       
+
+%%% Useful things for while you're writing. Disable for final submission.
+
+% Package to eliminate whitespace so you can see as much of your text as possible
+\usepackage{fullpage}
+
+% Package to insert todo notes and to insert placeholders for missing figures
+\usepackage[colorinlistoftodos]{todonotes}   
+
+% Package to display labels, useful for remembering how you labeled things
+%\usepackage{showlabels}  
+

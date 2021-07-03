@@ -1,0 +1,47 @@
+% !TEX encoding = UTF-8 Unicode
+\documentclass[11pt]{amsart}
+
+
+
+
+% Load external packages
+\include{packages}   
+
+% Load my own macros
+\include{macros}    
+  
+% Use section-based numbering for equations and figures. Who wants to hunt down Equation 100?
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+% Create a subdirectory called Images to hold all your graphics files. Keep things neat.
+\graphicspath{{Images/}}  
+
+\title{Brief Article}
+\author{Roy H. Goodman}
+\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+
+\begin{abstract}
+In which we solve a big problem.
+\end{abstract}
+
+
+\maketitle
+
+
+\section{Introduction}
+
+
+%\subsection{}
+
+\section*{Acknowledgments}
+Thanks everybody!
+
+
+%\bibliography{references}
+%\bibliographystyle{abbrv} % The best bibliography style because it replaces 
+                           % first & middle names with initials
+
+\end{document}  

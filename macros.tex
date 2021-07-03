@@ -1,0 +1,46 @@
+% These three definitions use \DeclarePairedDelimiter from mathtools
+% Use with a * to get \left and \right
+%\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+%\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+%\DeclarePairedDelimiter{\set}{\{}{\}}
+\DeclarePairedDelimiterX{\innerp}[2]{\langle}{\rangle}{#1,#2}
+\renewcommand{\ip}[2]{\innerp*{#1}{#2}}
+%\DeclarePairedDelimiterX{\PB}[2]{\{}{\}}{#1,#2} % Poisson brackets
+
+\newcommand{\normp}[2]{{\norm{#1}}_{#2}}
+
+\newcommand{\Tee}{\mathsf{T}} % I use this for the transpose of a matrix
+
+\newcommand{\Mf}{M^{\rm f}}
+\newcommand{\Mb}{M^{\rm b}}
+
+% Shortcuts for some matrices, which are bold uppercase latin letters
+\newcommand{\J}{\mathbf{J}}
+\newcommand{\I}{\mathbf{I}}
+\newcommand{\A}{\mathbf{A}}
+
+% Shortcuts for some vectors, which are bold lowercase latin letters
+\newcommand{\x}{\mathbf{x}}
+\newcommand{\y}{\mathbf{y}}
+\newcommand{\q}{\mathbf{q}}
+\newcommand{\p}{\mathbf{p}}
+\newcommand{\z}{\mathbf{z}}
+
+% There is already a command \r, so we have to use 
+\renewcommand{\r}{\mathbf{r}}
+\newcommand{\R}{\mathbf{R}}
+
+
+% For use with the todonotes package. I create one of these for each author
+\newcommand{\RG}[1]{\todo[inline,color=yellow]{RG: #1}}
+\newcommand{\BMB}[1]{\todo[inline,color=green]{BMB: #1}}
+
+% If you have words in a subscript, they should be typeset in Roman
+\newcommand{\cLshort}{{\mathcal L}_{\textnormal{short}}}
+\newcommand{\cLlong}{{\mathcal L}_{\textnormal{long}}}
+
+% If you're using these often, you should make macros!
+\newcommand{\CC}{{\mathbb C}}
+\newcommand{\RR}{{\mathbb R}}
+\newcommand{\ZZ}{{\mathbb Z}}
+
