@@ -9,3 +9,4 @@ set(groot,'DefaultTextInterpreter','latex')
 set(groot,'DefaultAxesTickLabelInterpreter','latex')
 set(groot,'DefaultLegendInterpreter','latex');
 set(groot,'DefaultColorbarTickLabelInterpreter','latex')
+set(groot,'DefaultTextFontSize',20)
