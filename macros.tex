@@ -1,7 +1,5 @@
 % These three definitions use \DeclarePairedDelimiter from mathtools
 % Use with a * to get \left and \right
-%\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
-%\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
 %\DeclarePairedDelimiter{\set}{\{}{\}}
 \DeclarePairedDelimiterX{\innerp}[2]{\langle}{\rangle}{#1,#2}
 \renewcommand{\ip}[2]{\innerp*{#1}{#2}}
@@ -9,27 +7,22 @@
 
 \newcommand{\normp}[2]{{\norm{#1}}_{#2}}
 
-\newcommand{\Tee}{\mathsf{T}} % I use this for the transpose of a matrix
+% We define a transpose command so we can code meaning not typesetting
+\newcommand{\transpose[1]{ {#1}^{\mathsf{T}} }
 
-\newcommand{\Mf}{M^{\rm f}}
-\newcommand{\Mb}{M^{\rm b}}
+
 
 % Shortcuts for some matrices, which are bold uppercase latin letters
-\newcommand{\J}{\mathbf{J}}
-\newcommand{\I}{\mathbf{I}}
-\newcommand{\A}{\mathbf{A}}
+\newcommand{\J}{\vb{J}}
+\newcommand{\I}{\vb{I}}
+\newcommand{\A}{\vb{A}}
 
 % Shortcuts for some vectors, which are bold lowercase latin letters
-\newcommand{\x}{\mathbf{x}}
-\newcommand{\y}{\mathbf{y}}
-\newcommand{\q}{\mathbf{q}}
-\newcommand{\p}{\mathbf{p}}
-\newcommand{\z}{\mathbf{z}}
+\newcommand{\x}{\vb{x}}
+\newcommand{\y}{\vb{y}}
 
-% There is already a command \r, so we have to use 
-\renewcommand{\r}{\mathbf{r}}
-\newcommand{\R}{\mathbf{R}}
-
+% There is already a command \r, so we have to use \renewcommand instead of \newcommand
+\renewcommand{\r}{\vb{r}}
 
 % For use with the todonotes package. I create one of these for each author
 \newcommand{\RG}[1]{\todo[inline,color=yellow]{RG: #1}}
